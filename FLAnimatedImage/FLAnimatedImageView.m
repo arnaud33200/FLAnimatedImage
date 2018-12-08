@@ -328,6 +328,9 @@ static NSUInteger gcd(NSUInteger a, NSUInteger b)
     }
 }
 
+- (void)releaseMemory {
+    self.animatedImage = nil;
+}
 
 - (BOOL)isAnimating
 {
